@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+<body>
+<script> 
+
+function convertTofahrenhiet(celcius){
+return((celcius*9/5)+32);
+}
+function convertToCelcius(fahrenhiet)
+{
+  return((fahrenhiet-32)*5/9)
+
+}
+function convertTemp(degree,unit){
+if (unit === 'C'){
+ const result =convertTofahrenhiet(degree);
+ return `${result}F`;
+
+}
+else if (unit=== 'F'){
+const result = convertToCelcius(degree);
+return `${result}C`;
+}
+
+}
+console.log(convertTemp(25,'C'));
+
+  </script>
+ 
+</body></html>
